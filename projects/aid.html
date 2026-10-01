@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A.I.D — game design case study by Delvin Susilo.">
+  <title>A.I.D | Delvin Susilo</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="project-page">
+  <a class="skip-link" href="#case-content">Skip to case study</a>
+  <main class="project-detail case-study" aria-labelledby="game-title">
+    <a class="back-link" href="../index.html#projects">← Back to projects</a>
+    <header class="detail-header">
+      <div class="detail-intro">
+        <p class="eyebrow">Delvin Susilo · Game Design Case Study</p>
+      <h1 id="game-title">A.I.D</h1>
+      <dl class="detail-meta"><div><dt>Role</dt><dd>Game Designer</dd></div><div><dt>Design Duration</dt><dd>5 days</dd></div><div><dt>Tools</dt><dd>Unity</dd></div></dl>
+      </div>
+      <figure class="case-preview project-cover">
+        <img src="../assets/AID%20PNG.jpeg" alt="A.I.D — Artificial Intelligence Defender cover art" width="1050" height="789">
+      </figure>
+    </header>
+    <div class="case-layout">
+      <nav class="case-nav" aria-label="Case study sections">
+        <p class="eyebrow">On this page</p>
+        <a href="#gameplay">Gameplay</a>
+        <a href="#game-description">Game Description</a>
+        <a href="#core-loop">Core Loop</a>
+        <a href="#personal-contributions">Personal Contributions</a>
+        <a href="#design-breakdown">Design Breakdown — Combat Priorities and Energy</a>
+      </nav>
+      <div class="case-content" id="case-content" tabindex="-1">
+        <section class="case-section" id="gameplay">
+          <h2>Gameplay</h2>
+          <figure class="case-preview">
+            <img src="../assets/aid.gif" alt="A.I.D gameplay" loading="lazy">
+            <figcaption>A.I.D gameplay</figcaption>
+          </figure>
+        </section>
+        <section class="case-section" id="game-description">
+          <h2>Game Description</h2>
+          <p>A.I.D is an action-defense game where players protect a city from a giant boss named Martin. Players must manage energy, coordinate drone support, and respond to different attack phases while finding opportunities to damage the boss.</p>
+          <p>The player character cannot die, but the city can fall. Losing 15 buildings results in defeat, while the Gravity phase introduces an additional threat that must be stopped before its charge completes.</p>
+        </section>
+        <section class="case-section" id="core-loop">
+          <h2>Core Loop</h2>
+          <p class="gameplay-loop"><strong>Respond to Threats → Manage Energy and Drone Support → Exploit Attack Opportunities → Repeat</strong></p>
+          <p>Protect buildings and respond to Martin’s attacks. Manage energy by coordinating the drone’s supply and recharge actions. Use available openings to damage Martin, then adapt as the encounter moves into its next phase.</p>
+        </section>
+        <section class="case-section" id="personal-contributions">
+          <h2>Personal Contributions</h2>
+          <p>I worked on core gameplay mechanics, balancing, UI/UX design, and gameplay polish. My design work focused on the relationship between city defense, energy management, and boss combat.</p>
+          <p>I defined HUD requirements for energy, boss health, building losses, and current objectives. I also proposed giving redirected missiles an additional purpose: reducing Martin’s remaining shield time when returned to the boss. Through playtesting, I identified gameplay issues and helped guide revisions to feedback and encounter flow.</p>
+        </section>
+        <section class="case-section" id="design-breakdown">
+          <h2>Design Breakdown — Combat Priorities and Energy</h2>
+          <p>The encounter asks players to divide their attention between immediate threats and opportunities to attack. Because building destruction is a loss condition, dealing damage to Martin is only one part of making progress.</p>
+          <p>Energy management adds another decision. Players can request energy from the drone, but the drone also needs to recharge. The design goal is to make resource recovery part of combat planning.</p>
+          <p>Missile redirection connects defense with offense. Reducing shield time gives players a reason to engage with an incoming missile and rewards a successful redirect with earlier access to the boss.</p>
+        </section>
+        <a class="back-link" href="../index.html#projects">← Back to projects</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Carccident — game design case study by Delvin Susilo.">
+  <title>Carccident | Delvin Susilo</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="project-page">
+  <a class="skip-link" href="#case-content">Skip to case study</a>
+  <main class="project-detail case-study" aria-labelledby="game-title">
+    <a class="back-link" href="../index.html#projects">← Back to projects</a>
+    <header class="detail-header">
+      <div class="detail-intro">
+        <p class="eyebrow">Delvin Susilo · Game Design Case Study</p>
+      <h1 id="game-title">Carccident</h1>
+      <dl class="detail-meta"><div><dt>Role</dt><dd>Game Designer</dd></div><div><dt>Design Duration</dt><dd>5 days</dd></div><div><dt>Tools</dt><dd>Unity</dd></div></dl>
+      </div>
+      <figure class="case-preview project-cover">
+        <img src="../assets/carccident.png" alt="Carccident cover art" width="315" height="250">
+      </figure>
+    </header>
+    <div class="case-layout">
+      <nav class="case-nav" aria-label="Case study sections">
+        <p class="eyebrow">On this page</p>
+        <a href="#gameplay">Gameplay</a>
+        <a href="#game-description">Game Description</a>
+        <a href="#core-loop">Core Loop</a>
+        <a href="#personal-contributions">Personal Contributions</a>
+        <a href="#design-breakdown">Design Breakdown — Traffic Flow and Patience</a>
+      </nav>
+      <div class="case-content" id="case-content" tabindex="-1">
+        <section class="case-section" id="gameplay">
+          <h2>Gameplay</h2>
+          <figure class="case-preview">
+            <img src="../assets/carccident.gif" alt="Carccident gameplay" loading="lazy">
+            <figcaption>Carccident gameplay</figcaption>
+          </figure>
+        </section>
+        <section class="case-section" id="game-description">
+          <h2>Game Description</h2>
+          <p>Carccident is a traffic-management game where players control traffic lights to keep vehicles moving and prevent collisions. Each vehicle has limited patience. If it waits too long at a red light, it will drive through, creating a new risk at the intersection.</p>
+        </section>
+        <section class="case-section" id="core-loop">
+          <h2>Core Loop</h2>
+          <p class="gameplay-loop"><strong>Observe Traffic and Waiting Vehicles → Adjust Traffic Lights → Resolve Traffic Conflicts → Repeat</strong></p>
+          <p>Watch incoming vehicles and identify which lanes need attention. Change the traffic lights to let vehicles pass while holding conflicting traffic. Reassess the intersection as new vehicles arrive and waiting drivers lose patience.</p>
+        </section>
+        <section class="case-section" id="personal-contributions">
+          <h2>Personal Contributions</h2>
+          <p>I designed the core traffic-control mechanics and contributed to map design, shaping where vehicle routes intersect and compete for access. I also worked on gameplay balancing, focusing on the pressure created by traffic flow and the vehicle patience system.</p>
+        </section>
+        <section class="case-section" id="design-breakdown">
+          <h2>Design Breakdown — Traffic Flow and Patience</h2>
+          <p>The patience mechanic introduces a consequence for keeping a lane stopped for too long. A red light temporarily controls traffic, but it cannot hold vehicles indefinitely.</p>
+          <p>The balancing focus is the relationship between incoming traffic, waiting time, and opportunities to clear each lane. The design goal is to give players reasons to change priorities while preserving enough time to understand a dangerous situation and respond.</p>
+        </section>
+        <a class="back-link" href="../index.html#projects">← Back to projects</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
