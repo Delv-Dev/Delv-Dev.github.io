@@ -16,17 +16,13 @@ A short video showing customer requests, furniture purchases, placement, rotatio
 
 **Video:** [To be added]
 
-## My Role and Responsibilities
+## Personal Contributions — Game Designer
 
-My main contributions included:
+Created the initial concept for the “Limited Space” theme, inspired by the room customization in PewDiePie’s Tuber Simulator. Designed the initial core loop around a starting budget, requests from a grandmother character, and purchasing and arranging furniture within a limited room.
 
-- Designing the core gameplay loop.
-- Contributing to the main furniture-placement mechanics.
-- Balancing the relationship between space, customer requests, and money.
-- Iterating the game’s progression and decision-making.
-- Supporting the overall player experience.
+Collaborated with another game designer to develop the game flow, furniture database, and task requirements, including furniture prices, dimensions, stats, and task rewards. I also contributed ideas for several furniture items.
 
-**Additional responsibilities:** [To confirm]
+During team discussions, I proposed limiting furniture sales per round to preserve the challenge of limited space, and contributed to the tipping system as an additional source of income. Both systems were implemented. The game still requires further balancing between budget, task demands, and room capacity.
 
 ## Design Goal
 
@@ -62,18 +58,9 @@ Furniture requires money, so the player cannot treat every placement problem as 
 
 The ability to sell or replace furniture allows players to recover from earlier decisions, but changing the room may create a financial loss or disrupt an existing layout.
 
-## Design Process and Evidence
+## Collaborative Design Documentation
 
-Potential supporting material:
-
-- Early room-layout sketches.
-- Grid and furniture-size planning.
-- Core-loop diagram.
-- Economy or price-balancing spreadsheet.
-- Customer-request progression.
-- Screenshots showing different room states.
-- Examples of layouts that failed during testing.
-- Before-and-after balancing values.
+Game flow, furniture values, and task requirements developed together with another game designer during the game jam. These notes document our initial design decisions rather than a fully balanced final system.
 
 ## Challenges and Solutions
 
@@ -97,7 +84,7 @@ Both resources must restrict different parts of the player’s decisions so that
 
 ## My Impact
 
-My work on the core loop and balancing helped connect customer requests, room space, and budget into one decision-making system.
+My initial concept and collaborative design work helped connect customer requests, room space, and budget into one decision-making system. The game still requires further balancing between budget, task demands, and room capacity.
 
 Rather than treating furniture placement as decoration, the design encourages players to evaluate each object based on immediate usefulness, cost, occupied space, and its effect on future requests.
 

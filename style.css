@@ -168,6 +168,16 @@ body.project-page { display: block; height: auto; min-height: 100vh; overflow: a
 .case-preview { margin: 0 0 24px; }
 .case-preview img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 10px; }
 .case-preview figcaption { margin-top: 8px; color: var(--muted); font-size: 11px; }
+.documentation-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.design-documentation .documentation-card { display: flex; flex-direction: column; min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: #24243f; text-decoration: none; transition: border-color .2s; }
+.documentation-card:hover { border-color: #888; }
+.documentation-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.documentation-label { display: flex; justify-content: space-between; gap: 12px; padding: 14px 16px; background: #202020; border-bottom: 1px solid var(--line); font-size: 13px; font-weight: 600; }
+.documentation-label > span { color: var(--muted); }
+.documentation-image { display: flex; align-items: center; justify-content: center; flex: 1; padding: 12px; }
+.design-documentation img { width: 100%; height: auto; border: 0; border-radius: 0; }
+.documentation-card-wide { grid-column: 1 / -1; }
+.design-documentation figcaption { margin-top: 16px; font-size: 13px; line-height: 1.7; }
 .project-cover { width: 100%; max-width: 360px; min-width: 0; margin: 0; justify-self: end; }
 .project-cover img { aspect-ratio: 4 / 3; object-fit: contain; background: #10131d; }
 .case-section .case-note { padding: 12px 16px; border-left: 2px solid #777; background: #202020; font-size: 13px; }
@@ -180,6 +190,8 @@ body.project-page { display: block; height: auto; min-height: 100vh; overflow: a
   .detail-header { margin-top: 32px; }
 }
 @media (max-width: 640px) {
+  .documentation-grid { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .documentation-image { padding: 8px; }
   .detail-header { grid-template-columns: minmax(0, 1fr); gap: 24px; margin-bottom: 32px; padding-bottom: 28px; }
   .project-cover { max-width: 360px; justify-self: center; }
   .detail-meta { gap: 16px 24px; }
