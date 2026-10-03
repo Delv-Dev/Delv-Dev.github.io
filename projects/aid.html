@@ -14,8 +14,8 @@
     <header class="detail-header">
       <div class="detail-intro">
         <p class="eyebrow">Delvin Susilo · Game Design Case Study</p>
-      <h1 id="game-title">A.I.D</h1>
-      <dl class="detail-meta"><div><dt>Role</dt><dd>Game Designer</dd></div><div><dt>Design Duration</dt><dd>5 days</dd></div><div><dt>Tools</dt><dd>Unity</dd></div></dl>
+      <h1 id="game-title">A.I.D — Artificial Intelligence Defender</h1>
+      <dl class="detail-meta"><div><dt>Role</dt><dd>Game Designer</dd></div><div><dt>Game Jam Duration</dt><dd>5 days</dd></div><div><dt>Engine</dt><dd>Unity</dd></div><div><dt>Additional Development</dt><dd>Post-jam gameplay and presentation polish</dd></div></dl>
       </div>
       <figure class="case-preview project-cover">
         <img src="../assets/AID%20PNG.jpeg" alt="A.I.D — Artificial Intelligence Defender cover art" width="1050" height="789">
@@ -25,10 +25,14 @@
       <nav class="case-nav" aria-label="Case study sections">
         <p class="eyebrow">On this page</p>
         <a href="#gameplay">Gameplay</a>
-        <a href="#game-description">Game Description</a>
-        <a href="#core-loop">Core Loop</a>
-        <a href="#personal-contributions">Personal Contributions</a>
-        <a href="#design-breakdown">Design Breakdown — Combat Priorities and Energy</a>
+        <a href="#game-description">Game Overview</a>
+        <a href="#core-loop">Core Gameplay Loop</a>
+        <a href="#personal-contributions">My Contributions</a>
+        <a href="#design-breakdown">Protecting the City</a>
+        <a href="#energy-drone">Energy &amp; Drone Support</a>
+        <a href="#boss-interactions">Boss Interactions</a>
+        <a href="#hud-visual-polish">HUD &amp; Visual Polish</a>
+        <a href="#post-jam">Post-Jam Iteration</a>
       </nav>
       <div class="case-content" id="case-content" tabindex="-1">
         <section class="case-section" id="gameplay">
@@ -39,25 +43,56 @@
           </figure>
         </section>
         <section class="case-section" id="game-description">
-          <h2>Game Description</h2>
-          <p>A.I.D is an action-defense game where players protect a city from a giant boss named Martin. Players must manage energy, coordinate drone support, and respond to different attack phases while finding opportunities to damage the boss.</p>
-          <p>The player character cannot die, but the city can fall. Losing 15 buildings results in defeat, while the Gravity phase introduces an additional threat that must be stopped before its charge completes.</p>
+          <h2>Game Overview</h2>
+          <p>A.I.D is a boss encounter game where players defend a city against Martin, managing their energy and support drone while responding to changing attack phases.</p>
+          <p>The player character cannot die. Instead, the challenge centers on protecting buildings and meeting encounter objectives. Losing 15 buildings or failing the gravity-phase deadline results in defeat.</p>
         </section>
         <section class="case-section" id="core-loop">
-          <h2>Core Loop</h2>
-          <p class="gameplay-loop"><strong>Respond to Threats → Manage Energy and Drone Support → Exploit Attack Opportunities → Repeat</strong></p>
-          <p>Protect buildings and respond to Martin’s attacks. Manage energy by coordinating the drone’s supply and recharge actions. Use available openings to damage Martin, then adapt as the encounter moves into its next phase.</p>
+          <h2>Core Gameplay Loop</h2>
+          <p class="gameplay-loop"><strong>Respond to Martin’s attacks → Manage energy and drone support → Counter phase mechanics → Create damage opportunities → Defeat Martin before the city is lost.</strong></p>
+          <p>The encounter moves through UFO, missile, and gravity phases. Players must adapt to each phase while balancing offensive actions, energy availability, and the condition of the city.</p>
         </section>
         <section class="case-section" id="personal-contributions">
-          <h2>Personal Contributions</h2>
-          <p>I worked on core gameplay mechanics, balancing, UI/UX design, and gameplay polish. My design work focused on the relationship between city defense, energy management, and boss combat.</p>
-          <p>I defined HUD requirements for energy, boss health, building losses, and current objectives. I also proposed giving redirected missiles an additional purpose: reducing Martin’s remaining shield time when returned to the boss. Through playtesting, I identified gameplay issues and helped guide revisions to feedback and encounter flow.</p>
+          <h2>My Contributions</h2>
+          <p>I shaped and refined gameplay rules during development and subsequent polishing, including player survivability, defeat conditions, energy management, and the support drone’s behavior. I established that the player character should remain invulnerable, with failure tied to city destruction and encounter objectives.</p>
+          <p>I directed refinements to the relationship between the player and the drone, including toggle-based resupply and recharge controls. I also specified that energy should not regenerate passively, keeping the drone central to resource management.</p>
+          <p>For the boss encounter, I contributed to the refinement of phase interactions and proposed rewarding redirected missiles by shortening Martin’s shield duration.</p>
+          <p>I also directed HUD and presentation improvements, prioritizing energy visibility, boss health, building losses, and drone-state feedback. My polish work extended to the nighttime visual direction, combat effects, menu presentation, and replay flow.</p>
+          <p>During the polishing stage, I used AI-assisted coding support to implement and troubleshoot changes, while providing design requirements and feedback.</p>
         </section>
         <section class="case-section" id="design-breakdown">
-          <h2>Design Breakdown — Combat Priorities and Energy</h2>
-          <p>The encounter asks players to divide their attention between immediate threats and opportunities to attack. Because building destruction is a loss condition, dealing damage to Martin is only one part of making progress.</p>
-          <p>Energy management adds another decision. Players can request energy from the drone, but the drone also needs to recharge. The design goal is to make resource recovery part of combat planning.</p>
-          <p>Missile redirection connects defense with offense. Reducing shield time gives players a reason to engage with an incoming missile and rewards a successful redirect with earlier access to the boss.</p>
+          <h2>Design Decisions — Protecting the City</h2>
+          <p>I established a distinction between player survival and mission success: the character cannot die, but the player can still lose.</p>
+          <p>This places the consequences of mistakes on the city and encounter objectives. The 15-building destruction limit and gravity-phase deadline give players explicit failure conditions without relying on a conventional player health system.</p>
+        </section>
+        <section class="case-section" id="energy-drone">
+          <h2>Design Decisions — Energy &amp; Drone Support</h2>
+          <p>I specified an energy system that depends on active drone support rather than passive regeneration.</p>
+          <p>Players toggle energy resupply with <strong>F</strong> and the drone’s self-recharge with <strong>C</strong>. This creates a resource-management decision alongside combat: when to request support and when to allow the drone to recover.</p>
+          <p>During polishing, we refined transfer and recharge behavior, including what happens when the drone is empty and how requests are canceled or queued. Overheat recovery also restores the player’s energy, making its behavior another part of the resource system to consider.</p>
+        </section>
+        <section class="case-section" id="boss-interactions">
+          <h2>Design Decisions — Boss Interactions</h2>
+          <p>The encounter combines shield protection, weakpoints, and phase-specific threats. During polishing, we addressed a shield issue that allowed close-range attacks to damage Martin while protection was active.</p>
+          <p>I also proposed that redirecting a missile back at Martin should reduce his remaining shield duration, giving players an offensive reward for responding to an incoming threat.</p>
+          <p>Missile timeout behavior was refined so expired missiles would release a riding player safely and allow the encounter to continue.</p>
+        </section>
+        <section class="case-section" id="hud-visual-polish">
+          <h2>HUD &amp; Visual Polish</h2>
+          <p>I directed HUD improvements to make the encounter’s key information easier to follow:</p>
+          <ul>
+            <li><strong>Energy percentage and overheat feedback</strong> to communicate resource availability.</li>
+            <li><strong>Martin’s health</strong> to show progress toward victory.</li>
+            <li><strong>Building destruction count</strong> to communicate proximity to defeat.</li>
+            <li><strong>Drone status and F/C prompts</strong> to clarify support options.</li>
+          </ul>
+          <p>For the visual pass, I requested a nighttime city setting, illuminated windows, and distinct colors for combat elements. Further iterations adjusted lighting, projectile effects, and boss accents.</p>
+          <p>I also guided the main menu toward a view of the player and game environment, and requested a Play Again option to support repeated attempts.</p>
+        </section>
+        <section class="case-section" id="post-jam">
+          <h2>Post-Jam Iteration</h2>
+          <p>The original game jam build was followed by additional polishing. This work focused on clarifying rules, resolving encounter issues, improving feedback, and making repeated play more consistent.</p>
+          <p>The changes were developed iteratively through design feedback and AI-assisted implementation. They represent a gameplay and usability polish pass; their effect on difficulty and player understanding still needs broader playtesting.</p>
         </section>
         <a class="back-link" href="../index.html#projects">← Back to projects</a>
       </div>

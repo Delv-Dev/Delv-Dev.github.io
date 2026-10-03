@@ -49,7 +49,21 @@
         </section>
         <section class="case-section" id="personal-contributions">
           <h2>Personal Contributions</h2>
-          <p>I designed the core traffic-control mechanics and contributed to map design, shaping where vehicle routes intersect and compete for access. I also worked on gameplay balancing, focusing on the pressure created by traffic flow and the vehicle patience system.</p>
+          <p>I designed the core gameplay loop, connecting traffic management with performance-based rewards and upgrade progression. I also designed the game’s UI/HUD, planning how gameplay information and controls would be presented to the player.</p>
+          <p>I developed the initial scoring structure, awarding points for vehicles passing through the intersection and time spent in a shift, while deducting points for collisions. The total score would determine the money earned, linking the player’s performance to progression.</p>
+          <p>Alongside these systems, I contributed to team discussions about traffic-light rules. I identified an opportunity for opposing directions to move simultaneously when their paths did not intersect and proposed adjusting the rules to reflect the game’s vehicle movement.</p>
+          <h3>Design Decisions — Scoring &amp; Progression</h3>
+          <p>My initial scoring proposal combined three factors:</p>
+          <ul>
+            <li><strong>Cars passed:</strong> Award points for each vehicle that successfully passes.</li>
+            <li><strong>Shift duration:</strong> Award points based on time spent in the shift.</li>
+            <li><strong>Collisions:</strong> Deduct points when accidents occur.</li>
+          </ul>
+          <p>The intention was to reward both sustained play and successful traffic management while giving collisions a cost. Total points were then converted into money.</p>
+          <p>The game’s upgrade system includes slower battery depletion and increased rewards per passing vehicle, connecting the money earned during a shift to improvements for subsequent attempts.</p>
+          <h3>Design Decisions — Traffic Flow</h3>
+          <p>During a team discussion, I identified that eastbound and westbound vehicles could move simultaneously without colliding, since their paths did not intersect in the straight-through road layout. I questioned whether making these directions wait for each other added a meaningful challenge.</p>
+          <p>I proposed allowing both directions to move together, keeping traffic restrictions tied to actual collision risks. I also pointed out that turning vehicles could introduce conflicting paths and require different signal rules. This discussion helped us examine how traffic-light behavior should relate to the game’s vehicle movement.</p>
         </section>
         <section class="case-section" id="design-breakdown">
           <h2>Design Breakdown — Traffic Flow and Patience</h2>
